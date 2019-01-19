@@ -1,6 +1,6 @@
 package hiin124;
 
-public class quest2 {
+public class Question1 {
 
 	
 	public static void main(String[] args) {
