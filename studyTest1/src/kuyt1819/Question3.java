@@ -14,7 +14,7 @@ public class Question3 {
 		famousSongs.put("first", "난알아요");
 		famousSongs.put("second", "하여가");
 		famousSongs.put("third", "교실이데아");
-		
+		//d
 		//키값 뽑아서 이터레이터 돌려서 출력하는건 알겠는데.. 까먹었어요 ..ㅠㅜ
 		Set<String> famousSongs2 = famousSongs.keySet();
 		/*famousSongs2.iterator();

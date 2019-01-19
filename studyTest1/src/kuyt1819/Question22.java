@@ -5,7 +5,7 @@ public class Question22 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		doubleArryMake(3, 5);
-
+		//dd
 	}
 
 	private static void doubleArryMake(int i, int j) {

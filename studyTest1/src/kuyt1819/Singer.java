@@ -9,7 +9,7 @@ public class Singer extends Person {
 	public Singer() {
 		// TODO Auto-generated constructor stub
 	}
-
+	//d
 	public Singer(String name, int age, String major, String titlesong) {
 		this.name = name;
 		this.age = age;
