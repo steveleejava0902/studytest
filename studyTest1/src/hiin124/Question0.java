@@ -6,6 +6,7 @@ public class Question0 {
 		String temp = "스티브리자바테스트문제풀이중";
 		Question0 q=new Question0(); 
 		q.printTest(temp);
+		//s
 	}
 
 	private void printTest(String string) {
