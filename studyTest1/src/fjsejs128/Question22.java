@@ -21,18 +21,18 @@ public class Question22 {
 				else {
 					arr[row][col] = Integer.toString(row) + Integer.toString(col);
 				}*/
-				arr[row][col] = "arr[" + row + " ][ " + col +"] = " + arr[row][col];
+				arr[row][col] = "arr[" + row + " ][ " + col +"] = " + row + col;
 			}
 		}
-			
+		
+		
 		for(int row = 0; row < i; row++) {
 			for(int col = 0; col < j; col++) {
-				System.out.println("arr[" + row + " ][ " + col +"] = " + arr[row][col]);		
+				System.out.println("arr[" + row + " ][ " + col +"] = " + row+col);		
+				
 			}
 			System.out.println(" ");
 		}
-	}
-
 	
-
+	}
 }
