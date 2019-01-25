@@ -9,6 +9,7 @@ public class Singer extends Person{
 	
 	Map<String, String> famousSongs;
 	//수정중..
+	//..
 	void setFamousSongs('a','b');
 	
 	public Map<String, String> getFamousSongs() {
