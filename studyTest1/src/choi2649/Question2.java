@@ -13,6 +13,7 @@ public class Question2 {
 		}
 		for(int i =0; i < c; i++) {
 			System.out.println("a["+i+"]="+a[i]);
+			//
 		}
 	}
 }
