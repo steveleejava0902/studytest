@@ -1,33 +1,28 @@
 package ktojong;
 
-import java.util.Scanner;
-
 public class Calculator1 {
     public static void main(String[] args) {
-        int first, second;
-        String op;
-        Scanner sc = new Scanner(System.in);
-
-        first = sc.nextInt();
-        op = sc.nextLine();
-        second = sc.nextInt();
-
-        calculate(first, op, second);
+        calculate(3, "+", 5);
     }
 
-    public static void calculate(int f, String op, int s) {
-        if ("+".equals(op)) {
-            System.out.println(f + s);
-        } else if ("-".equals(op)) {
-            System.out.println(f - s);
-        } else if ("*".equals(op)) {
-            System.out.println(f * s);
-        } else if ("/".equals(op)) {
-            if (s == 0) {
-                System.out.println("Cannot divide by 0");
-                return;
-            }
-            System.out.println(f / s);
+    public static void calculate(int first, String operator, int second) {
+        switch (operator) {
+            case "+":
+                System.out.println(first + second);
+                break;
+            case "-":
+                System.out.println(first - second);
+                break;
+            case "*":
+                System.out.println(first * second);
+                break;
+            case "/":
+                if (second == 0) {
+                    System.out.println("Cannot divide by 0");
+                    return;
+                }
+                System.out.println(first / second);
+                break;
         }
     }
 }
