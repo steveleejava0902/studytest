@@ -11,7 +11,7 @@ public class Singer extends Person{
 	//수정중..
 	//..
 	//ss
-	void setFamousSongs('a','b');
+//	void setFamousSongs('a','b');
 	
 	public Map<String, String> getFamousSongs() {
 		return famousSongs;
