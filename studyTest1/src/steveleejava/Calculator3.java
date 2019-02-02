@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-public class CalText_t3 extends JFrame implements KeyListener {
+public class Calculator3 extends JFrame implements KeyListener {
 
 	String OPERATION="",FIRSTNUM="",SECONDNUM="",RESULT="";
 	
@@ -26,11 +26,11 @@ public class CalText_t3 extends JFrame implements KeyListener {
 	// JFormattedTextField inputLabel;
 
 	public static void main(String[] arg) {
-		CalText_t3 t1 = new CalText_t3();
+		Calculator3 t1 = new Calculator3();
 
 	}
 
-	public CalText_t3() {
+	public Calculator3() {
 
 		mainPanel = new JPanel();
 		mainPanel.setBorder(new TitledBorder("panel"));
