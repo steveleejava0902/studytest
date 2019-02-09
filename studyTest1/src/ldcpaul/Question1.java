@@ -14,7 +14,7 @@ public class Question1 {
 		Question1 question1 = new Question1();
 		question1.printTest("스티브리자바테스트문제풀이중");
 	}
-	public  void printTest(String string) {
+	public void printTest(String string) {
 		System.out.println(string);
 	}
 }
