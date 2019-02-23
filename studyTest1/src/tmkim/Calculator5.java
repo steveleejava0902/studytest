@@ -27,7 +27,6 @@ public class Calculator5 extends JFrame implements KeyListener{
    
    public static void main(String[] args) {
       Calculator5 c1 = new Calculator5();
-   
    }
    
    public Calculator5() {
@@ -39,7 +38,8 @@ public class Calculator5 extends JFrame implements KeyListener{
       mainPanel.setBorder(new TitledBorder("panel"));
       
       //인풋 창 생성
-      inputLabel = new JTextField();
+      inputLabel = new JTextField(); 
+      
       inputLabel.setBorder(tb);
       
       //연산자
@@ -63,11 +63,11 @@ public class Calculator5 extends JFrame implements KeyListener{
       setContentPane(mainPanel);         
       
       setTitle("계산기");
-      setSize(300, 200);         	//사이즈 설정
-      setVisible(true);         	//화면에 보이게 설정
-      setLocationRelativeTo(null);	//center배치
+      setSize(300, 200);              //사이즈 설정
+      setVisible(true);               //화면에 보이게 설정
+      setLocationRelativeTo(null);    //center배치
       
-      inputLabel.requestFocus();   // 키 이벤트를 받을 컴포넌트를 강제로 설정
+      inputLabel.requestFocus();      // 키 이벤트를 받을 컴포넌트를 강제로 설정
       
    }
 
@@ -75,13 +75,13 @@ public class Calculator5 extends JFrame implements KeyListener{
    @Override
    public void keyPressed(KeyEvent e) {
       
-      int keyNum = e.getKeyCode();                   //입력 키 코드를 가져옴
-      char key = e.getKeyChar();                     //입력 키 문자를 가져옴   
+      int keyNum = e.getKeyCode();                    //입력 키 코드를 가져옴
+      char key = e.getKeyChar();                      //입력 키 문자를 가져옴   
       
-      if(keyNum == 10) {                           //keyCode == 10 -> Enter
+      if(keyNum == 10) {                              //keyCode == 10 -> Enter
          KEYNUM = inputLabel.getText();               //Enter Key를 받았으니 input창에 있는 Text를 가져 옴.   
          int result = (int)calculate(KEYNUM);
-         inputLabel.setText("");                     //input값 초기화
+         inputLabel.setText("");                       //input값 초기화
          operationArea.setText(KEYNUM + "=" + result);
       }
       
